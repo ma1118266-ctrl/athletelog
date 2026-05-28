@@ -30,13 +30,13 @@ const allSportLogs = {
     { date: "MAY 24", title: "サーブ練習", mood: "😐", score: 65 },
   ],
   basketball: [
-    { date: "MAY 26", title: "3Pシュート練習", mood: "🔥", score: 88 },
+    { date: "MAY 26", title: "シュート練習", mood: "🔥", score: 88 },
     { date: "MAY 25", title: "ドリブル練習", mood: "😊", score: 75 },
     { date: "MAY 24", title: "ディフェンス", mood: "😐", score: 70 },
   ],
   soccer: [
     { date: "MAY 26", title: "シュート練習", mood: "🔥", score: 93 },
-    { date: "MAY 25", title: "パス回し", mood: "😊", score: 82 },
+    { date: "MAY 25", title: "ドリブル", mood: "😊", score: 82 },
     { date: "MAY 24", title: "フリーキック", mood: "😐", score: 68 },
   ],
   track: [
