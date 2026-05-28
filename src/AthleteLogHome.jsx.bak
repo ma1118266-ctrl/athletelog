@@ -18,34 +18,11 @@ const weekData = [
   { day: "S", score: null },
 ];
 
-const allSportLogs = {
-  baseball: [
-    { date: "MAY 26", title: "バッティング練習", mood: "🔥", score: 95 },
-    { date: "MAY 25", title: "守備・走塁", mood: "😊", score: 78 },
-    { date: "MAY 24", title: "投球フォーム", mood: "😐", score: 60 },
-  ],
-  volleyball: [
-    { date: "MAY 26", title: "スパイク練習", mood: "🔥", score: 91 },
-    { date: "MAY 25", title: "レシーブ練習", mood: "😊", score: 80 },
-    { date: "MAY 24", title: "サーブ練習", mood: "😐", score: 65 },
-  ],
-  basketball: [
-    { date: "MAY 26", title: "3Pシュート練習", mood: "🔥", score: 88 },
-    { date: "MAY 25", title: "ドリブル練習", mood: "😊", score: 75 },
-    { date: "MAY 24", title: "ディフェンス", mood: "😐", score: 70 },
-  ],
-  soccer: [
-    { date: "MAY 26", title: "シュート練習", mood: "🔥", score: 93 },
-    { date: "MAY 25", title: "パス回し", mood: "😊", score: 82 },
-    { date: "MAY 24", title: "フリーキック", mood: "😐", score: 68 },
-  ],
-  track: [
-    { date: "MAY 26", title: "インターバル走", mood: "🔥", score: 90 },
-    { date: "MAY 25", title: "スタートダッシュ", mood: "😊", score: 77 },
-    { date: "MAY 24", title: "フォーム走", mood: "😐", score: 63 },
-  ],
-};
-// recentLogs is defined inside component
+const recentLogs = [
+  { date: "MAY 26", title: "バッティング練習", mood: "🔥", score: 95 },
+  { date: "MAY 25", title: "守備・走塁", mood: "😊", score: 78 },
+  { date: "MAY 24", title: "投球フォーム", mood: "😐", score: 60 },
+];
 
 const css = `
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700;1,900&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap');
@@ -552,7 +529,6 @@ const css = `
 
 export default function AthleteLogHome() {
   const [selectedSport, setSelectedSport] = useState("baseball");
-  const recentLogs = allSportLogs[activeSport] || allSportLogs.baseball;
   const [activeTab, setActiveTab] = useState("home");
 
   const sport = sports.find(s => s.id === selectedSport);
