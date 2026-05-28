@@ -45,7 +45,7 @@ const allSportLogs = {
     { date: "MAY 24", title: "フォーム走", mood: "😐", score: 63 },
   ],
 };
-// recentLogs is defined inside component
+
 
 const css = `
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700;1,900&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap');
@@ -552,7 +552,7 @@ const css = `
 
 export default function AthleteLogHome() {
   const [selectedSport, setSelectedSport] = useState("baseball");
-  const recentLogs = allSportLogs[activeSport] || allSportLogs.baseball;
+  const recentLogs = allSportLogs[selectedSport] || allSportLogs.baseball;
   const [activeTab, setActiveTab] = useState("home");
 
   const sport = sports.find(s => s.id === selectedSport);
